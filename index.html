@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Lexend+Giga|Mansalva|Nanum+Myeongjo|Poiret+One|Righteous&display=swap"
+          rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display|Quicksand&display=swap" rel="stylesheet">
+
+    <link href='finalwebsite'>
+    <meta charset="UTF-8">
+    <title>Donghae Sushi and Grill</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <style>
+
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: white;
+        }
+
+        .wrapper {
+            width: 1180px;
+            height: 4500px;
+            background-position: top;
+            position: relative;
+            margin: 0 auto;
+        }
+
+
+        nav {
+            width: 1180px;
+            height: 100px;
+            background-color: white;
+            margin: 0 auto;
+            padding-top: 0px;
+            font-size: 20px;
+            position: fixed;
+            z-index: 1;
+            text-align: center;
+        }
+
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 100%;
+            position: absolute;
+            margin: auto;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 2s;
+            animation-name: fade;
+            animation-duration: 2s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+
+
+        #section-01, #section-05 {
+            width: 100%;
+            height: 787px;
+            margin: 0 auto;
+            background-repeat: no-repeat;
+            text-align: center;
+            background-color: white;
+            font-size: 20px;
+            font-family: 'Poiret One', cursive;
+
+        }
+
+        #section-02 {
+            width: 1180px;
+            height: 787px;
+            background-color: white;
+            text-decoration-color: black;
+            margin: 0 auto;
+            text-align: center;
+            /*padding: 10px;*/
+            overflow: scroll;
+        }
+
+        .map {
+            font-family: 'Poiret One', cursive;
+            top: 1700px;
+            left: 150px;
+            font-size: 18px;
+            position: absolute;
+        }
+
+        .textinsections {
+            font-family: 'Poiret One', cursive;
+            top: 1900px;
+            right: 180px;
+            font-size: 18.5px;
+            position: absolute;
+        }
+
+        .maptext {
+            font-family: 'Poiret One', cursive;
+            top: 1800px;
+            right: 165px;
+            font-size: 20px;
+            position: absolute;
+        }
+
+
+        #section-03 {
+            width: 1180px;
+            height: 787px;
+            background-color: white;
+            color: black;
+            margin: 0 auto;
+            font-size: 22px;
+            font-family: 'Poiret One', cursive;
+            text-align: center;
+        }
+
+        #section-04 {
+            width: 1180px;
+            height: 1000px;
+            background-color: white;
+            text-decoration-color: black;
+            margin: 0 auto;
+            font-size: 22px;
+            font-family: 'Poiret One', cursive;
+            text-align: center;
+        }
+
+        p#nav-section-01, p#nav-section-02, p#nav-section-03, p#nav-section-04, p#nav-section-05 {
+            display: inline;
+            font-size: 20px;
+            font-family: 'Lexend Giga', sans-serif;
+            font-weight: bold;
+            padding: 0 25px;
+            line-height: 100px;
+            alignment: center;
+            text-align: center;
+
+        }
+
+        a:link {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: darkred;
+            cursor: pointer;
+        }
+
+        a:active {
+            text-decoration: none;
+            color: darkred;
+        }
+
+        /*a:active {*/
+        /*    text-decoration: none;*/
+        /*    color: black;*/
+        /*}*/
+
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            font-size: 20px;
+            width: 100%;
+            height: 40px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: 'Lexend Giga', sans-serif;
+            text-align: center;
+            align-content: center;
+            padding-top: 5px;
+
+        }
+
+        .app {
+            width: 1180px;
+            height: auto;
+            background-color: white;
+            /*padding: 10px 0 10px 0;*/
+            font-size: 15px;
+            font-family: 'Poiret One', cursive;
+            text-align: center;
+            color: navy;
+
+        }
+
+        .h2 {
+            font-family: 'Lexend Giga', sans-serif;
+            color: darkred;
+            font-size: 25px;
+        }
+
+        .menutitle {
+            font-family: 'Lexend Giga', sans-serif;
+            font-size: 40px;
+            color: darkred;
+        }
+
+        .koreansoupandsalads {
+            width: 1180px;
+            height: auto;
+            background-color: white;
+            /*padding: 10px 0 10px 0;*/
+            font-size: 15px;
+            font-family: 'Poiret One', cursive;
+            text-align: center;
+            color: navy;
+
+        }
+
+        .koreanhotpots {
+            width: 1180px;
+            height: auto;
+            background-color: white;
+            /*padding: 10px 0 10px 0;*/
+            font-size: 15px;
+            font-family: 'Poiret One', cursive;
+            text-align: center;
+            color: navy;
+
+        }
+
+        .KoreanStirFry {
+            width: 1180px;
+            height: auto;
+            background-color: white;
+            /*padding: 10px 0 10px 0;*/
+            font-size: 15px;
+            font-family: 'Poiret One', cursive;
+            text-align: center;
+            color: navy;
+
+        }
+
+        .KoreanGrilledandBraised {
+            width: 1180px;
+            height: auto;
+            background-color: white;
+            /*padding: 10px 0 10px 0;*/
+            font-size: 15px;
+            font-family: 'Poiret One', cursive;
+            text-align: center;
+            color: navy;
+
+        }
+
+        .KoreanRiceandNoodles {
+            width: 1180px;
+            height: auto;
+            background-color: white;
+            /*padding: 10px 0 10px 0;*/
+            font-size: 15px;
+            font-family: 'Poiret One', cursive;
+            text-align: center;
+            color: navy;
+
+        }
+
+        .MainEntree {
+            width: 1180px;
+            height: auto;
+            background-color: whitesmoke;
+            /*padding: 10px 0 10px 0;*/
+            font-size: 15px;
+            font-family: 'Poiret One', cursive;
+            text-align: center;
+            color: navy;
+
+        }
+
+        .NoodleEntree {
+            width: 1180px;
+            height: auto;
+            background-color: white;
+            /*padding: 10px 0 10px 0;*/
+            font-size: 15px;
+            font-family: 'Poiret One', cursive;
+            text-align: center;
+            color: navy;
+
+        }
+
+        .MainEntreeFor2 {
+            width: 1180px;
+            height: auto;
+            background-color: white;
+            /*padding: 10px 0 10px 0;*/
+            font-size: 15px;
+            font-family: 'Poiret One', cursive;
+            text-align: center;
+            color: navy;
+
+        }
+
+        .NigriandSashimi {
+            width: 1180px;
+            height: auto;
+            background-color: white;
+            /*padding: 10px 0 10px 0;*/
+            font-size: 15px;
+            font-family: 'Poiret One', cursive;
+            text-align: center;
+            color: navy;
+
+        }
+
+        .koreanstews {
+            width: 1180px;
+            height: auto;
+            background-color: white;
+            /*padding: 10px 0 10px 0;*/
+            font-size: 15px;
+            font-family: 'Poiret One', cursive;
+            text-align: center;
+            color: navy;
+        }
+
+        .photosinabout {
+            font-family: 'Poiret One', cursive;
+            top: 2550px;
+            right: 50px;
+            position: absolute;
+        }
+
+        .about {
+            font-family: 'Poiret One', cursive;
+            top: 2750px;
+            left: 20px;
+            font-size: 18px;
+            position: absolute;
+        }
+
+        .imageinlocation {
+            font-family: 'Poiret One', cursive;
+            top: 2025px;
+            left: 150px;
+            font-size: 18px;
+            position: absolute;
+        }
+
+        .contactform {
+            max-width: 500px;
+            height: 250px;
+            position: absolute;
+            top: 3800px;
+            left: 340px;
+            margin-left: 85px;
+            font-family: 'Lexend Giga', sans-serif;
+            font-size: 20px;
+            color: white;
+            background-color: darkred;
+            margin-top: 60px;
+            padding: 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+
+    <div id="top">
+    </div>
+    <nav>
+        <a href="#section-02"><p id="nav-section-02">MENU</p></a>
+        <a href="#section-03"><p id="nav-section-03">LOCATION</p></a>
+        <img src="Donghae%20Logo.png" width="215" , height="80">
+        <a href="#section-04"><p id="nav-section-04">ABOUT</p></a>
+        <a href="#section-05"><p id="nav-section-05">CONTACT</p></a>
+    </nav>
+
+    <section id="section-01">
+        <!--<img src="Image%201_resizejpg.jpg">-->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src='Image 1_resizejpg.jpg'
+                     style="width:1180px"
+                     style="height:787px">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="Image Resize3.jpg"
+                     style="width:1180px"
+                     style="height:787px">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="Image Resize2.jpg"
+                     style="width:1180px"
+                     style="height:787px">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="Image Resize1.jpg"
+                     style="width:1180px"
+                     style="height:787px">
+            </div>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </section>
+    <section id="section-02">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="menutitle">
+            <h1>MENU</h1>
+        </div>
+        <br>
+        <div class="h2">
+            <h2>Appetizers</h2>
+        </div>
+        <div class="app">
+            <br>
+            <h3>Mandu / $7</h3>
+            <p>Deep-fried pork dumpling. 8 Pieces</p>
+            <br>
+            <h3>Toppoki / $9</h3>
+            <p>Spicy stir-friend rice cake.</p>
+            <br>
+            <h3>Haemool Toppoki / $15</h3>
+            <p>Spicy stir-fried rice cake served with seafood.</p>
+            <br>
+            <h3>Kimchi Jeon / $6</h3>
+            <p>Pan-Fried Kimchi Cake served with Sauce</p>
+            <br>
+            <h3>Haemool Pajeon / $14</h3>
+            <p>Seafood pancake served with sauce.</p>
+            <br>
+            <h3>Korean-Style Chicken Wings / $6</h3>
+            <p>Sweet and Spicy chicken wins. 5 pieces.</p>
+            <br>
+            <h3>Agedashi Tofu / $5</h3>
+            <p>Deep-fried tofu served with tempura sauce. 4 pieces..</p>
+            <br>
+            <h3>Tempura Shrimp / $8</h3>
+            <p>Deep-fried, tempura-battered shrimp served with tempura sauce. 6 pieces.</p>
+            <br>
+            <h3>Vegatable Tempura / $6.50</h3>
+            <p>Deep-fried, tempura-battered vegetable variety. 6 pieces.</p>
+            <br>
+            <h3>Tuna Tataki / $10</h3>
+            <p>Seared raw tuna with cilantro and ponzu sauce.</p>
+            <br>
+            <br>
+        </div>
+        <br>
+        <div class="koreansoupandsalads">
+            <div class="h2">
+                <h2>Korean Soups and Salads</h2>
+            </div>
+            <br>
+            <h3>Miso Soup / $2</h3>
+            <p>Tofu and a pinch of seaweed mixed with Dashi Stock.</p>
+            <br>
+            <h3>Kaiso Salad / $3</h3>
+            <p>Japanese-style seaweed salad</p>
+            <br>
+            <h3>Sunomono Salad / $3.50</h3>
+            <p>Cucumber Salad served with Ginger Vinaigrette dressing.</p>
+            <br>
+            <h3>Tako Sunomono Salad / $6.50</h3>
+            <p>Pan-Fried Kimchi Cake served with Sauce</p>
+            <br>
+            <h3>Kani Sunomono Salad / $6.50</h3>
+            <p>Seasoned Crab and Cucumber Salad</p>
+            <br>
+            <h3>Ebi Sunomono Salad / $6.50</h3>
+            <p>Seasoned shrimp and cucumber salad.</p>
+            <br>
+            <h3>Sashimi Salad / $10</h3>
+            <p>Deep-fried tofu served with tempura sauce. 4 pieces..</p>
+            <br>
+            <h3>Steamed Rice / $2.00</h3>
+            <p>Korean-styled steamed Rice.</p>
+            <br>
+            <br>
+        </div>
+        <br>
+        <div class="koreanhotpots">
+            <div class="h2">
+                <h2>Korean Hot Pots</h2>
+            </div>
+            <h3>Agu-Jjim Hot Pot / $38</h3>
+            <p>Steamed Monk fish served with vegetables and Soy Bean sprouts. Serves 2.</p>
+            <br>
+            <h3>Haemool-Jeongol Hot Pot / $38</h3>
+            <p>Spicy Seafood variety, udon noodles and a vegetable served in broth. Serves 2.</p>
+            <br>
+            <h3>Bulnac-Jeongol Hot Pot / $38</h3>
+            <p>Bulgolgi and octopus, udon noodles and vegetables served in broth. Serves 2.</p>
+            <br>
+            <h3>Budea-Jigae Hot Pot / $28</h3>
+            <p>Spicy Sausage, ham, bacon, spam and tofu served in broth with a side of ramen noodles. Serves 2.</p>
+            <br>
+        </div>
+        <br>
+        <div class="KoreanStirFry">
+            <div class="h2">
+                <h2>Korean Stir Fry</h2>
+            </div>
+            <h3>Japchae / $14</h3>
+            <p>Colorful dish made with glass noodles, need. carrots, spinach and a soy sauce seasoning.</p>
+            <br>
+            <h3>Jeyuk-Bokkeum / $14</h3>
+            <p>Stir fried Pork with Onions served with Red Chili Sauce.</p>
+            <br>
+            <h3>Ojingeo-Bokkeum / $14</h3>
+            <p>Stir Fried squid with vegetables served in a red chili sauce.</p>
+            <br>
+        </div>
+        <br>
+
+        <div class="KoreanGrilledandBraised">
+            <div class="h2">
+                <h2>Korean Grilled And Braised</h2>
+            </div>
+            <h3>Bulgolgi / $16</h3>
+            <p>Korean-Styled beed marinated in Soy Sauce.</p>
+            <br>
+            <h3>Daeji-Bulgolgi / $14</h3>
+            <p>Pork Bulgolgi Marinated in red Chili sauce</p>
+            <br>
+            <h3>Dak-Bulgolgi / $14</h3>
+            <p>Chicken Bulgolgi marinated in Soy Sauce</p>
+            <br>
+            <h3>Galbi-Gui / $24</h3>
+            <p>Grilled spare ribs marinated in Soy Sauce</p>
+            <br>
+            <h3>Dak-Galbi / $14</h3>
+            <p>Grilled spicy Chicken cooked with spicy sauce</p>
+            <br>
+            <h3>Godunguh-Gui / $14</h3>
+            <p>Grilled mackerel seasoned with Soy Sauce</p>
+            <br>
+            <h3>Imyeonsu-Gui / $14</h3>
+            <p>Grilled Atka mackerel seasoned with Soy Sauce</p>
+            <br>
+            <h3>Galbi-Jjim / $24</h3>
+            <p>Braised, tender short ribs with Carrots, Dates, Chestnuts and vegetables.</p>
+            <br>
+            <h3>Godeungeo-Jorim / $14</h3>
+            <p>Braised mackerel served with Radish in a chili sauce</p>
+            <br>
+        </div>
+        <br>
+
+        <div class="KoreanRiceandNoodles">
+            <div class="h2">
+                <h2>Korean Rice And Noodles</h2>
+            </div>
+            <h3>Bibibap / $12</h3>
+            <p>Rice Topped with cooked vegetables, beef and a fried Egg.</p>
+            <br>
+            <h3>Dolsot-Bibimbap / $14</h3>
+            <p>Sizzling bibimbap served in a stone bowl.</p>
+            <br>
+            <h3>Haemool-Dupbap / $14</h3>
+            <p>Freshed sauteed seafood and vegetables with spicy sauce over Rice.</p>
+            <br>
+            <h3>Bokkeum-Bap / $12+</h3>
+            <p>Choice of Beef, Pork, Chicken, Vegetable, or shrimp served with Korean-Style fried Rice and
+                vegetables.</p>
+            <br>
+            <h3>Jjajang-Myun / $12</h3>
+            <p>Noodle dish topped with thick sauce made of Chunjang, diced Pork and vegetables.</p>
+            <br>
+            <h3>Jjampong / $14</h3>
+            <p>Spicy Noodle dish made with Seafood and vegetables.</p>
+            <br>
+            <h3>Neng-Myeon / $12+</h3>
+            <p>Choice of spicy mixed, or marinated raw skate served with buckwheat noodles, chilled house made soup and
+                Beef broth.</p>
+            <br>
+        </div>
+        <br>
+
+        <div class="koreanstews">
+            <div class="h2">
+                <h2>Korean Stews</h2>
+            </div>
+            <h3>Kimchi-Jigae Stew / $12</h3>
+            <p>Spicy Stew made with ripened Kimchi, Pork and Tofu.</p>
+            <br>
+            <h3>Soondubu-Jigae Stew / $12</h3>
+            <p>Spicy Stew with soft Tofu, seafood and Egg.</p>
+            <br>
+            <h3>Doenjang-Jigae Stew</h3>
+            <p>Stew with Soybean paste, Tofu, Clams and Vegetables</p>
+            <br>
+            <h3>Al-Jjigae Stew</h3>
+            <p>Stew made Tofu, Fish eggs and Radish</p>
+            <br>
+            <h3>Seolleongtang Stew / $12</h3>
+            <p>Soup amde with Beef bone and slices of Beef.</p>
+            <br>
+            <h3>Galbi-Tang Stew / $16</h3>
+            <p>Soup with simmered Short Ribs and Radish.</p>
+            <br>
+            <h3>Jogae-Tang Stew / $14</h3>
+            <p>Steamed soup made with Tofu and Clam</p>
+            <br>
+            <h3>Yukgaejang Stew / $12</h3>
+            <p>Steamed soup made with Tofu and Clam</p>
+            <br>
+            <h3>Tteok-Guk Stew / $12</h3>
+            <p>Sliced rice cake soup in a clear Beef broth.</p>
+            <br>
+        </div>
+        <br>
+
+        <div class="MainEntree">
+            <div class="h2">
+                <h2>Main Entree</h2>
+            </div>
+            <br>
+            <h3>Chicken Teriyaki / $15</h3>
+            <p>Grilled Chicken with homemade Teriyaki sauce and our house salad.</p>
+            <br>
+            <h3>Beef Teriyaki / $18</h3>
+            <p>Grilled beef with our house salad.</p>
+            <br>
+            <h3>Sundae-Guk / $14</h3>
+            <p>Traditional Korean soup with blood sausage.</p>
+            <br>
+            <h3>Ugeoji Galbitang / $16</h3>
+            <p>Chinese nepa and beef in a soybean paste soup.</p>
+            <br>
+            <h3>Gopchang Soondubu / $13</h3>
+            <p>Spicy soft tofu stew with Beef tripe and intestines</p>
+            <br>
+            <h3>Tonkatsu / $14</h3>
+            <p>Breaded and deep-fried Pork cutlet with a homemade sauce and a side of brocolli.</p>
+            <br>
+            <h3>Chicken Katsu / $14</h3>
+            <p>Deep-fried Chicken cutlet with homemade sauce and a side of brocolli.</p>
+            <br>
+        </div>
+        <div class="NoodleEntree">
+            <div class="h2">
+                <h2>Noodle Entree</h2>
+            </div>
+            <h3>Yakisoba / $12+</h3>
+            <p>Stir-fried ramen noodles, vegetables and your choice of Beef, Chicken or Shrimp in a sweet and savory
+                sauce.</p>
+            <br>
+            <h3>Yaki Udon / $15</h3>
+            <p>Stir-fried thick and chewy wheat noodles, vegetables and seafood in a sweet and savory sauce.</p>
+            <br>
+            <h3>Yaki Jjamppong / $14</h3>
+            <p>Spicy stir-fried noodles with vegetables and seafood in a spicy sauce.</p>
+            <br>
+            <h3>Udon / $13</h3>
+            <p>Thick, wheat Japanese hot noodle soup with seafood.</p>
+            <br>
+        </div>
+        <br>
+
+        <div class="MainEntreeFor2">
+            <div class="h2">
+                <h2>Main Entree for Two</h2>
+            </div>
+            <h3>Yukhoe / $24</h3>
+            <p>Julienned raw beef seasoned with Salt, Garlic, and Sesame Oil. Garnished with Korean Pear and Nuts</p>
+            <br>
+            <h3>Kaesong Bossam / $32</h3>
+            <p>Thin sliced of boiled Pork, served with royal court Kimchi wrapped around Oyster, Squid and Radish.</p>
+            <br>
+            <h3>Eundaegu Jorim / $28</h3>
+            <p>Spicy stir-fried noodles with vegetables and seafood in a spicy sauce.</p>
+            <br>
+            <h3>Daegu Meori Jjim / $34</h3>
+            <p>Steamed cod head with Radish, vegetables and special spicy sauce.</p>
+            <br>
+            <h3>O-Sam Bokkeum / $28</h3>
+            <p>Stir-fried squid and Korean-style Bacon with vegetables. Served in red chili sauce.</p>
+            <br>
+            <h3>Gobchang-Jeongol / $34</h3>
+            <p>Hot pot containing beef tripe, intestines, tofu and vegetables. Served with a side of Udon noodles.</p>
+            <br>
+            <h3>Endaegu Kama Jjim / $34</h3>
+            <p>Steamed black cod with chunks of White Radish, Vegetables and spicy sauce.</p>
+            <br>
+        </div>
+        <br>
+        <div class="NigriandSashimi">
+            <div class="h2">
+                <h2>NIGRI AND SASHIMI</h2>
+            </div>
+            <h3>Maguro / $5.25+</h3>
+            <p>Ahi Tuna. Raw fish.</p>
+            <br>
+            <h3>Hamachi / $5.25+</h3>
+            <p>Yellow Tail. Raw fish.</p>
+            <br>
+            <h3>Sake / $4.95+</h3>
+            <p>Salmon. Raw Fish.</p>
+            <br>
+            <h3>Sockeye / $5.95+</h3>
+            <p>Wild Caught Salmon. Raw Fish.</p>
+            <br>
+            <h3>Mutsu / $5.95+</h3>
+            <p>Escolar. Raw fish.</p>
+            <br>
+            <h3>Tai / $4.50+</h3>
+            <p>Izumi. Tilapia. Raw fish.</p>
+            <br>
+            <h3>Ebi / $4.95+</h3>
+            <p>Cooked Shrimp</p>
+            <br>
+            <h3>Ama Ebi / $6.25+</h3>
+            <p>Sweet raw shrimp. Raw Fish.</p>
+            <br>
+            <h3>Tako / $4.95+</h3>
+            <p>Octopus</p>
+            <br>
+            <h3>Ika / $4.75+</h3>
+            <p>Squid. Raw Fish.</p>
+            <br>
+            <h3>Kani / $5.50+</h3>
+            <p>Snow Crab.</p>
+            <br>
+            <h3>Saba / $4.50+</h3>
+            <p>Mackerel. Raw Fish.</p>
+            <br>
+            <h3>Inari / $3.95+</h3>
+            <p>Tofu pocket nigri. 2 pieces.</p>
+            <br>
+            <h3>Tamago / $3.95+</h3>
+            <p>Egg custard</p>
+            <br>
+        </div>
+
+    </section>
+    <section id="section-03">
+        <br>
+        <hr>
+        <br>
+        <div class="h2">
+            <h2>LOCATION</h2>
+        </div>
+        <div class="maptext">
+            <h2>We Are Located at:</h2>
+            <h3>251 N 1st Ave, Minneapolis, MN 55401</h3>
+
+        </div>
+
+        <div class="textinsections">
+            <p>
+                Stop worrying about parking tickets!
+            </p>
+            <p>
+                We got you covered! Yay!
+            </p>
+            <p>
+                Free parking beside the building for customers
+            </p>
+            <p>
+                in the heart of Downtown Minneapolis!
+            </p>
+        </div>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.1137616739247!2d-93.27319558413714!3d44.982000079098185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b33285437abd3b%3A0x9e1cce2936a21403!2sDong%20Hae%20Korean%20Grill%20%26%20Sushi!5e0!3m2!1sen!2sus!4v1572401699656!5m2!1sen!2sus"
+                    width="300" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        <div class="imageinlocation">
+            <img src="photo1.jpg" width="300" height="300">
+        </div>
+    </section>
+
+    <section id="section-04">
+        <hr>
+        <br>
+        <div class="h2">
+            <h2>ABOUT US</h2>
+        </div>
+        <div class="about">
+            <br>
+            <p>Dong Hae Korean Grill & Sushi offers delicious dining and takeout to Minneapolis, MN.</p>
+            <br>
+            <p> Dong Hae Korean Grill & Sushi is a cornerstone in the Minneapolis community
+            </p>
+            <p> and has been recognized for
+                its outstanding Sushi cuisine, excellent service and friendly staff.</p>
+            <br>
+            <p> Our Sushi restaurant is known for its modern interpretation of classic dishes</p>
+            <p>and its insistence on only
+                using high quality fresh ingredients.</p>
+            <br>
+            <p> ANY QUESTIONS PLEASE CALL US.</p></div>
+        <br>
+        <div class="photosinabout">
+            <img src="baked-chef-cook-dough-784632.png">
+        </div>
+    </section>
+
+    <section id="section-05">
+        <br>
+        <hr>
+
+        <br>
+        <br>
+        <div class="h2">
+            <h1>CONTACT US!</h1>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>
+            Feel Free to contact us with our contact form if you have any questions or concerns!
+        </p>
+
+        <br>
+
+        <div class="contactform">
+            <form action="/action_page.php">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="firstname">
+                <br>
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lastname">
+                <br>
+
+                <label for="email">Email Address:</label>
+                <input type="text" id="email" name="email">
+                <br>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject">
+                <br>
+
+                <label for="message">Message:</label>
+                <input type="text" id="message" name="message">
+                <br>
+
+                <input type="submit" value="Submit">
+                <br>
+
+            </form>
+        </div>
+
+        <p>
+            (612) 333-1999
+        </p>
+        <p>
+            Business Hours
+        </p>
+        <p> Mon: 11:00 AM – 9:30 PM
+        </p>
+        <p>
+            Tue: 11:00 AM – 9:30 PM
+        </p>
+        <p>
+            Wed: 11:00 AM – 9:30 PM
+        </p>
+        <p>
+            Thu: 11:00 AM – 9:30 PM
+        </p>
+        <p>
+            Fri: 11:00 AM – 10:30 PM
+        </p>
+        <p>
+            Sat: 11:00 AM – 10:30 PM
+        </p>
+        <p>
+            Sun: 11:00 AM – 9:30 PM
+        </p>
+
+    </section>
+
+    <div class="footer">
+        <p id="foot_1"> 251 N 1st Ave, Minneapolis, MN 55401</p>
+
+    </div>
+
+</div>
+
+<!-- End of wrapper -->
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+</script>
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on('click', function (event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+</script>
+</body>
+</html>
